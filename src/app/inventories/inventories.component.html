@@ -1,0 +1,26 @@
+<div class="table">
+    <div class="table_header">
+        <h3>Inventory Details</h3>
+        <div> <button class="add_new" >+ Add New</button> </div>
+    </div>
+    <div class="table_section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Inventory ID</th>
+                    <th>Inventory name</th>
+                    <th>Branch ID</th>
+                    <th>Gold ID</th>
+                    <th>Action</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let records of records">
+                <td>{{records.Inventory_ID}}</td>
+                <td>{{records.Inventory_Name}}</td>
+                <td>{{records.Branch_ID}}</td>
+                <td>{{records.Gold_ID}}</td>
+                <td> <button><i class="fa fa-pen"></i></button> <button ><i class="fa fa-trash"></i></button> </td>    
+            </tbody>
+        </table>
+    </div>
+   </div>

@@ -1,0 +1,30 @@
+    <div class="table">
+      <div class="table_header">
+          <h3>All Details</h3>
+      </div>
+      <div class="table_section">
+          <table>
+              <thead>
+                  <tr>
+                    <th>Branch ID</th>
+                    <th>Gold name</th>
+                    <th>Gold price</th>
+                    <th>Gold size</th>
+                    <th>Gold standard</th>
+                    <th>Country</th>
+                    <th>Inventory name</th>
+                     
+              </thead>
+              <tbody>
+                <tr *ngFor="let records of records">
+                  <td>{{records.Branch_ID}}</td>
+        <td >{{records.G_Name}}</td>
+        <td >{{records.G_Price}}</td>
+        <td >{{records.G_Size}}</td>
+        <td >{{records.G_Standard}}</td>
+        <td >{{records.Country_Name}}</td>
+        <td >{{records.Inventory_Name}}</td>
+              </tbody>
+          </table>
+      </div>
+     </div>

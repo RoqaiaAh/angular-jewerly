@@ -1,0 +1,22 @@
+<div class="table">
+    <div class="table_header">
+        <h3>Branch Details</h3>
+        <div> <button class="add_new" >+ Add New</button> </div>
+    </div>
+    <div class="table_section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Branch ID</th>
+                    <th>Country name</th>
+                    <th>Action</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let records of records">
+                <td>{{records.Branch_ID}}</td>
+                <td>{{records.Country_Name}}</td>
+                <td> <button><i class="fa fa-pen"></i></button> <button ><i class="fa fa-trash"></i></button> </td>    
+            </tbody>
+        </table>
+    </div>
+   </div>

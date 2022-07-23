@@ -1,0 +1,32 @@
+<h1 mat-dialog-title>Add new gold record :</h1>
+<form [formGroup]="goldForm">
+<p>
+    <mat-form-field appearance="legacy">
+      <mat-label>Gold name </mat-label>
+      <input formControlName="G_Name" matInput placeholder="">
+    </mat-form-field>
+  </p>
+  
+  <p>
+    <mat-form-field appearance="legacy">
+      <mat-label>Gold price </mat-label>
+      <input formControlName="G_Price" matInput placeholder="">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="legacy">
+      <mat-label>Gold size </mat-label>
+      <input formControlName="G_Size" matInput placeholder="">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="legacy">
+      <mat-label>Gold standard </mat-label>
+      <input formControlName="G_Standard" matInput placeholder="">
+    </mat-form-field>
+  </p>
+  <div mat-dialog-action [align]="'end'">
+    <button mat-raised-button class="btn2" (click)="addGold()">{{actionBtn}}</button>
+      <button mat-raised-button class="btn1" mat-dialog-close>Close</button>
+  </div>
+</form>

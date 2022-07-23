@@ -1,0 +1,28 @@
+<div class="table">
+  <div class="table_header">
+      <h3>Gold Details</h3>
+      <div> <button class="add_new" (click)="openDialog()">+ Add New</button> </div>
+  </div>
+  <div class="table_section">
+      <table>
+          <thead>
+              <tr>
+                  <th>Gold ID</th>
+                  <th>Gold name</th>
+                  <th>Gold Size</th>
+                  <th>Gold Price</th>
+                  <th>Gold Standard</th>
+                  <th>Action</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let records of records">
+              <td>{{records.G_ID}}</td>
+              <td>{{records.G_Name}}</td>
+              <td>{{records.G_Price}}</td>
+              <td>{{records.G_Size}}</td>
+              <td>{{records.G_Standard}}</td>  
+              <td> <button (click)="editGRecords(records)"><i class="fa fa-pen"></i></button> <button (click)="deleteGRecords(records)"><i class="fa fa-trash"></i></button> </td>    
+          </tbody>
+      </table>
+  </div>
+ </div>
